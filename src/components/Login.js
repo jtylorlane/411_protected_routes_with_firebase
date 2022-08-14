@@ -23,6 +23,8 @@ const Login = () => {
     // https://firebase.google.com/docs/auth/web/password-auth
     // find the signInWithEmailAndPassword function
     // the documentation uses .then() promise chaining and we have been using async/await either one is valid and will work
+
+    // method from firebase "signInWithEmailAndPassword"
     signInWithEmailAndPassword(auth, loginEmail, loginPassword)
       .then((userCredential) => {
         // Signed in
