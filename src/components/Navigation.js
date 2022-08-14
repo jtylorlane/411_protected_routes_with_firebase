@@ -5,7 +5,7 @@ import { auth } from "../firebase-config";
 import { signOut } from "firebase/auth";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const Navigation = ({user}) => {
+const Navigation = ({ user }) => {
   const navigate = useNavigate();
   console.log("auth.currentUser:from navigation.js", auth.currentUser);
   return (
@@ -56,3 +56,5 @@ const Navigation = ({user}) => {
 };
 
 export default Navigation;
+
+// 4. Look in `Navigation.js` We want our app to conditionally display the login/logout without having to manually refresh the page. Use what you did in `App.js` from `onAuthStateChanged` to passed down and render logout/login conditionally. Test it out What happens?
